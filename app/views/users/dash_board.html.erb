@@ -1,0 +1,17 @@
+
+<table>
+  <tr>
+    <th>Category_Name</th>
+    <th>Product Name</th>
+  </tr>
+  <% @products.each do |product| %>
+      <tr>
+        <td><%= product.cid %></td>
+        <td><%= product.name %></td>
+      </tr>   
+
+  <% end %>
+
+</table>
+
+<%= link_to "Create product", new_product_path %>

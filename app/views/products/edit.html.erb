@@ -1,0 +1,19 @@
+<h1>Edit Product</h1>
+ 
+<%= form_with scope: :product, url: products_path, local: true do |form| %>
+  <p>
+    <%= form.label :category name %><br>
+    <%= form.text_field :cid %>
+  </p>
+ 
+  <p>
+    <%= form.label :product name %><br>
+    <%= form.number_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Back', products_path %>
